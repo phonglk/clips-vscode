@@ -1,0 +1,26 @@
+{
+    "name": "clips",
+    "displayName": "clips-vscode",
+    "description": "CLIPS syntax highlight for vscode",
+    "version": "0.0.1",
+    "publisher": "phonglk",
+    "engines": {
+        "vscode": "^1.10.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "clips",
+            "aliases": ["CLIPS", "clips"],
+            "extensions": [".clp",".rule",".nlp"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "clips",
+            "scopeName": "source.clips",
+            "path": "./syntaxes/clips.tmLanguage"
+        }]
+    }
+}
